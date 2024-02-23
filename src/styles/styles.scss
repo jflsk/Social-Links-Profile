@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+// Variables
+$primary: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 20%);
+$darkgrey: hsl(0, 0%, 12%);
+$offblack: hsl(0, 0%, 8%);
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: $white;
+    background-color: $offblack;
+    font-size: .875rem;
+    font-weight: 400;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        max-width: 90%;
+        margin: 8rem 1rem;
+        padding: 2rem 1rem;
+        background-color: $darkgrey;
+        border-radius: .6rem;
+        .avatar {
+            max-width: 30%;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+        h2 {
+            margin: 0;
+            margin-bottom: 1rem;
+            font-size: .875rem;
+            font-weight: 700;
+            color: $primary;
+        }
+        span {
+            margin-bottom: 1rem;
+        }
+        a {
+            width: 85%;
+            max-width: 18rem;
+            margin-bottom: .5rem;
+            padding: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            color: $white;
+            background-color: $grey;
+            border: none;
+            border-radius: .5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    body {
+        display: flex;
+        justify-content: center;
+        .container {
+            width: 43%;
+            a{
+        -webkit-transition: all 0.2s linear;
+           -moz-transition: all 0.2s linear;
+             -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+            }
+            a:hover{
+                color: $grey;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        .container {
+            width: 34%;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        .container {
+            width: 23%;
+        }
+    }
+}

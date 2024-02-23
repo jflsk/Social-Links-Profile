@@ -1,1 +1,79 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 8%);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 90%;
+  margin: 8rem 1rem;
+  padding: 2rem 1rem;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 0.6rem;
+}
+body .container .avatar {
+  max-width: 30%;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+body .container h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+body .container h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+}
+body .container span {
+  margin-bottom: 1rem;
+}
+body .container a {
+  width: 85%;
+  max-width: 18rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  body .container {
+    width: 43%;
+  }
+  body .container a {
+    transition: all 0.2s linear;
+  }
+  body .container a:hover {
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
+  }
+}
+@media screen and (min-width: 769px) {
+  body .container {
+    width: 34%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body .container {
+    width: 23%;
+  }
+}/*# sourceMappingURL=styles.css.map */
